@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+const availableDrinks = ['diet coke', 'sprite', 'unsweet tea', 'ginger ale', 'coke', 'root beer', 'water'];
+
+const favDrink = temp => { if(temp <= 70) return 'hot cocoa'; if(temp >= 71) return 'unsweet tea'};
+
+const orderDrink = (arr, temp, callback) => { 
+    drink = callback(temp);
+    if(arr.includes(drink)) {
+        return `I will have the ${drink}, please.`;
+        } else {
+        return 'I will have the water, please.'
+        };
+}
+
+</script>
+</html>
